@@ -1,13 +1,14 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from django.shortcuts import render
 # Create your views here.
 print('Acessar site em http://127.0.0.1:8000/contato/')
 
 def home(request):
-    return HttpResponse('VOCÊ ESTÁ EM HOME')
+    return render(request,'recipes/home.html')
 
 def contato(request):
-    return HttpResponse('VOCÊ ESTÁ EM CONTATO')
+    return render(request,'temp/temp.html')
 
 def sobre(request):
     return HttpResponse('VOCÊ ESTÁ EM SOBRE')
