@@ -6,18 +6,9 @@
 
     <main class="main-content-container">
         <div class="main-content main-content-list container">
-            <div class="recipe recipe-list-item">
-                <div class="recipe-cover">
-                    <img src="https://dummyimage.com/1280x720.png/269fe6" alt="">
-                </div>
-                <div class="recipe-title-container">
-                    <h2 class="recipe-title">
-                        Lorem ipsum dolor sit amet.
-                    </h2>
-                </div>
-            </div>
+            {% include "recipes/partials/recipe.html"}
         </div>
     </main>
-    
+     {% include "recipes/partials/footer.html"}
 </body>
 </html>
